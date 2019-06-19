@@ -16,7 +16,7 @@ class CashRegister
     total_discount = (@total/100)*@discount
     puts "total is #{@total} so total_discount is #{total_discount}"
     @total -= total_discount
-    discount == 0 ? "There is no discount to apply." : "After the discount, the total comes to $#{@total}."
+    @discount == 0 ? "There is no discount to apply." : "After the discount, the total comes to $#{@total}."
   end # of apply_discount
 
 end #of class
