@@ -25,5 +25,5 @@ class CashRegister
 
 
 
-  
+
 end #of class
