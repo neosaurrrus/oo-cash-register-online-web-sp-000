@@ -13,7 +13,7 @@ class CashRegister
 
   def apply_discount
     total_discount = (@total/100)*@discount
-    puts total_discount
+    puts "total is #{@total} so total_discount is #{total_discount}"
   end # of apply_discount
 
 end #of class
