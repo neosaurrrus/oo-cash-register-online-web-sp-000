@@ -1,6 +1,6 @@
 
 class CashRegister
-  attr_accessor :total, :discount
+  attr_accessor :total, :discount, :previous_total
 
   def initialize(discount = 0)
     @total = 0
@@ -14,6 +14,7 @@ class CashRegister
   def apply_discount
     total_discount = (@total/100)*@discount
     puts "total is #{@total} so total_discount is #{total_discount}"
+    @total -= total_discount
   end # of apply_discount
 
 end #of class
