@@ -10,6 +10,9 @@ class CashRegister
 
   def add_item(title, price, quantity = 1)
     @total += price*quantity
+    quantity.loop do
+      @items << title
+    end
   end # of add_item
 
   def apply_discount
@@ -20,4 +23,7 @@ class CashRegister
     @discount == 0 ? "There is no discount to apply." : "After the discount, the total comes to $#{@total}."
   end # of apply_discount
 
+
+
+  
 end #of class
