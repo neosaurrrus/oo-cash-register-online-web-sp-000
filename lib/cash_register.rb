@@ -12,6 +12,7 @@ class CashRegister
   end # of add_item
 
   def apply_discount
+    discount == 0 ? return "There is no discount to apply" :
     total_discount = (@total/100)*@discount
     puts "total is #{@total} so total_discount is #{total_discount}"
     @total -= total_discount
