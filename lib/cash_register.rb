@@ -7,4 +7,7 @@ class CashRegister
     @discount = discount
   end #of initialise
 
+  def add_item(title, price)
+    @totsl += price
+  end # of add_item
 end #of class
