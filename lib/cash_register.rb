@@ -8,6 +8,6 @@ class CashRegister
   end #of initialise
 
   def add_item(title, price)
-    @totsl += price
+    @total += price
   end # of add_item
 end #of class
