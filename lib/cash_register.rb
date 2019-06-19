@@ -24,7 +24,7 @@ class CashRegister
   end # of apply_discount
 
   def void_last_transaction
-    @total += @last_transaction
+    @total -= @last_transaction
   end
 
 
